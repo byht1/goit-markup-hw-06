@@ -1,0 +1,57 @@
+.benefist {
+  background-color: $colorWhite;
+
+  &__box {
+    padding-top: 96px;
+    padding-bottom: 47px;
+  }
+}
+
+.content {
+  display: flex;
+
+  &__elements {
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__fon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+  }
+
+  &__paragraph {
+    margin-bottom: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $colorText;
+  }
+
+  &__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $colorMain;
+  }
+}

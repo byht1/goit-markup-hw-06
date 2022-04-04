@@ -1,0 +1,194 @@
+// Адрес и лого or address and logo
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-box {
+  display: flex;
+}
+
+.address-box {
+  padding-top: 55px;
+  padding-bottom: 66px;
+  margin-right: 70px;
+
+  &__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: $colorWhite;
+  }
+
+  &--color {
+    color: $colorBlue;
+  }
+}
+
+.address {
+  margin-top: 20px;
+
+  &__elements {
+    margin-top: 9px;
+
+    &:first-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  &--style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $colorWhite;
+  }
+
+  &__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+// Соц.сети or network-footer
+
+.network-footer {
+  padding-top: 67px;
+  padding-bottom: 106px;
+  margin-right: 93px;
+
+  &__header {
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $colorWhite;
+  }
+}
+
+.network-footer-box {
+  display: flex;
+
+  &__elements {
+    margin-right: 10px;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms $cube;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $colorBlue;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: $colorWhite;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.network-footer-box__elements .network-footer-box__link:focus {
+  background-color: $colorBlue;
+  border-radius: 50%;
+}
+
+// Форма or form-footer
+
+.form-footer-box {
+  padding-top: 67px;
+  padding-bottom: 100px;
+
+  &__header {
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $colorWhite;
+  }
+}
+
+.form-footer {
+  display: flex;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2f303a;
+  }
+}
+
+.button__icon {
+  margin-left: 10px;
+
+  fill: currentColor;
+}
+
+.footre-contact {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

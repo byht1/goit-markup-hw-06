@@ -1,0 +1,66 @@
+.company-dox {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.company {
+  &__header {
+    margin-bottom: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $colorText;
+  }
+}
+
+.company-list {
+  display: flex;
+
+  &__elements {
+    margin-right: 30px;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: border-color 250ms $cube;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    color: #afb1b8;
+
+    transition: color 250ms $cube;
+  }
+
+  &__logo {
+    fill: currentColor;
+  }
+}
+
+.company-list__elements:hover,
+.company-list__elements:focus {
+  color: $colorBlue;
+  border-color: $colorBlue;
+}
+.company-list__elements .company-list__link:hover,
+.company-list__elements .company-list__link:focus {
+  color: $colorBlue;
+  border-color: $colorBlue;
+}

@@ -1,0 +1,25 @@
+// Змінні і загальні класи or changes and general classes
+
+@import 'utils/variables'; // Змінні or changers
+@import 'utils/reset'; // Cкидання і додаткові класи or reset and general classes
+
+// footer and header
+@import 'components/header';
+@import 'components/footer';
+
+// main page 1
+
+@import 'components/hero'; // + кнопка or button
+@import 'components/benefist';
+@import 'components/activity';
+@import 'components/team';
+@import 'components/company';
+
+// Form-hero on page 1
+
+@import 'components/form';
+
+// main page 2
+
+@import 'components/filter'; // + загальне оформленнея main page 2
+@import 'components/work';
