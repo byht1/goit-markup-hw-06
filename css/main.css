@@ -114,6 +114,17 @@ input {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.page--activ .page__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+}
+
 .page__link:hover, .page__link:focus {
   color: #2196F3;
 }
@@ -790,7 +801,7 @@ input {
 .form-label__coment {
   padding: 12px 16px;
   width: 448px;
-  height: 138px;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -830,16 +841,19 @@ input {
 
 .form-label__input:focus-within,
 .form-label__coment:focus-within {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
 }
 
 .form-label__input:focus-within ~ .form-label__icon {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .form-chekbox {
   display: inline-block;
-  margin: 20px 40px 30px 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 76px;
+  margin-right: 51px;
 }
 
 .form-chekbox__text {
@@ -867,13 +881,13 @@ input {
 }
 
 .form-chekbox__input:focus ~ .form-chekbox__text::before {
-  border-color: #2196F3;
+  border-color: #2196f3;
 }
 
 .form-chekbox__input:checked ~ .form-chekbox__text::before {
-  border-color: #2196F3;
+  border-color: #2196f3;
   background-image: url(../images/vector.svg);
-  background-color: #2196F3;
+  background-color: #2196f3;
   background-position: center;
   background-size: contain;
   background-origin: border-box;
@@ -881,6 +895,7 @@ input {
 }
 
 .form-chekbox--blue {
+  text-decoration: underline;
   color: #2196F3;
 }
 
@@ -888,6 +903,15 @@ input {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -899,15 +923,6 @@ input {
 }
 
 .button-end__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   fill: currentColor;
 }
 
@@ -915,9 +930,22 @@ input {
   color: #2196F3;
 }
 
+.button-form {
+  padding: 10px 56px;
+  width: 200px;
+  height: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
 .button-form:hover,
 .button-form:focus {
-  border: 2px solid #2196F3;
+  border: 2px solid #2196f3;
   background-origin: border-box;
 }
 
